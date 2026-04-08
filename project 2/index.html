@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrews Installation Group - Professional Installation Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #003366;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #003366, #8B4513);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        .logo-main {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #003366;
+        }
+        .logo-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #8B4513;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Minimal Header -->
+    <header class="minimal-header">
+        <div class="container-base">
+            <div class="flex justify-between items-center">
+                <a href="#" class="logo">
+                    <div class="logo-icon">AIG</div>
+                    <div class="logo-text">
+                        <div class="logo-main">Andrews</div>
+                        <div class="logo-tag">Installation Group</div>
+                    </div>
+                </a>
+                <a href="#lead-form" class="btn-primary">Get Free Estimate</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container-base py-28 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="hero-copy">
+                <span class="eyebrow">Professional Installation Services</span>
+                <h1 class="heading-display text-white mt-4 mb-6">Expert Installations Done Right the First Time</h1>
+                <p class="text-white/70 text-lg leading-relaxed mb-8">Transform your space with our premium installation services. From flooring to cabinets, we deliver flawless results with attention to detail and professional craftsmanship.</p>
+                <div class="flex flex-col sm:flex-row gap-4 items-start">
+                    <a href="#lead-form" class="btn-primary px-8 py-4">Get Free Estimate <span class="arrow">→</span></a>
+                    <a href="tel:(480) 555-1234" class="btn-secondary px-6 py-4 text-sm">Call (480) 555-1234</a>
+                </div>
+                <p class="text-white/30 text-xs mt-3">Free · No obligation · Response within 24 hours</p>
+            </div>
+            <div class="hero-form hidden lg:block">
+                <div class="hero-form-card">
+                    <div class="hero-form-header">
+                        <div class="hero-form-icon">📋</div>
+                        <h3 class="hero-form-title">Get Your Free Estimate</h3>
+                        <p class="hero-form-subtitle">We'll respond within 24 hours</p>
+                    </div>
+                    <form id="hero-form" class="hero-form-fields" novalidate>
+                        <div class="input-group">
+                            <label class="input-label">Your name *</label>
+                            <input type="text" name="name" placeholder="Enter your full name" class="hero-input" required>
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label">Email address *</label>
+                            <input type="email" name="email" placeholder="your.email@example.com" class="hero-input" required>
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label">Phone number</label>
+                            <input type="tel" name="phone" placeholder="(480) 555-1234" class="hero-input">
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label">Service needed</label>
+                            <select name="service" class="hero-input">
+                                <option value="">Select a service</option>
+                                <option value="flooring">Flooring Installation</option>
+                                <option value="cabinets">Cabinet Installation</option>
+                                <option value="countertops">Countertop Installation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="hero-submit-btn">
+                            <span class="btn-text">Get Free Estimate</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                        <div class="hero-form-footer">
+                            <div class="guarantee-pill">
+                                <span class="guarantee-icon">✓</span>
+                                <span class="guarantee-text">Free • No obligation • 24hr response</span>
+                            </div>
+                            <div class="scarcity-notice">
+                                <span class="scarcity-icon">⚡</span>
+                                <span class="scarcity-text">Only 3 consultation slots left today</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Trust Bar -->
+    <section class="trust-bar">
+        <div class="container-base">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="trust-item">
+                    <div class="icon">⭐</div>
+                    <div class="value">4.9★</div>
+                    <div class="label">127 verified reviews</div>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">🛠️</div>
+                    <div class="value">500+</div>
+                    <div class="label">Projects completed</div>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">🛡️</div>
+                    <div class="value">Licensed</div>
+                    <div class="label">Insured & bonded</div>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">⏰</div>
+                    <div class="value">15 yrs</div>
+                    <div class="label">Trusted in Tempe</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section section-padding">
+        <div class="container-base">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="eyebrow-dark">The Real Problem</span>
+                <h2 class="heading-lg mt-4 mb-6">You've experienced shoddy installations that cost more to fix than the original job</h2>
+                <p class="text-gray-600 text-lg leading-relaxed mb-8">DIY attempts leave gaps and imperfections. Cheap contractors rush the job, causing damage and callbacks. You deserve better – professional installations that last and look flawless from day one.</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="pain-point">
+                        <h3>Uneven flooring that creaks</h3>
+                        <p>Poor installation leads to annoying sounds and safety hazards.</p>
+                    </div>
+                    <div class="pain-point">
+                        <h3>Misaligned cabinets and countertops</h3>
+                        <p>Sloppy work affects the entire look and functionality of your space.</p>
+                    </div>
+                    <div class="pain-point">
+                        <h3>Costly repairs and delays</h3>
+                        <p>Fixing mistakes costs time and money you didn't budget for.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section section-padding bg-white">
+        <div class="container-base">
+            <div class="text-center mb-16">
+                <span class="eyebrow-dark">Why Choose Us</span>
+                <h2 class="heading-lg mt-4 mb-6">Experience the difference of professional installation</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="benefit-card card">
+                    <div class="icon">🎯</div>
+                    <h3 class="heading-md mb-4">Precision craftsmanship</h3>
+                    <p class="text-gray-600">Every installation is measured twice, cut once. We ensure perfect fit and alignment every time.</p>
+                </div>
+                <div class="benefit-card card">
+                    <div class="icon">⚡</div>
+                    <h3 class="heading-md mb-4">Efficient timeline</h3>
+                    <p class="text-gray-600">We respect your schedule. Projects completed on time, minimizing disruption to your life.</p>
+                </div>
+                <div class="benefit-card card">
+                    <div class="icon">🛡️</div>
+                    <h3 class="heading-md mb-4">Quality guarantee</h3>
+                    <p class="text-gray-600">Our work comes with a satisfaction guarantee. We're not done until you're completely happy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section-padding">
+        <div class="container-base">
+            <div class="text-center mb-16">
+                <span class="eyebrow-dark">Client Success Stories</span>
+                <h2 class="heading-lg mt-4 mb-6">Real results from satisfied customers</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card card">
+                    <span class="eyebrow-dark text-xs mb-4 inline-block">Worried about kitchen renovation</span>
+                    <blockquote class="text-gray-700 text-lg italic leading-relaxed mb-5">"The cabinet installation was flawless. They handled the complex layout perfectly and cleaned up everything. Highly recommend!"</blockquote>
+                    <div class="flex items-center justify-between mt-auto">
+                        <div>
+                            <p class="font-bold text-sm">Sarah M.</p>
+                            <p class="text-gray-400 text-xs">Tempe, AZ</p>
+                        </div>
+                        <span class="outcome-pill">Kitchen transformed</span>
+                    </div>
+                </div>
+                <div class="testimonial-card card">
+                    <span class="eyebrow-dark text-xs mb-4 inline-block">Concerned about hardwood floors</span>
+                    <blockquote class="text-gray-700 text-lg italic leading-relaxed mb-5">"Our hardwood floors look amazing and feel solid. No creaks or gaps. The team was professional and efficient."</blockquote>
+                    <div class="flex items-center justify-between mt-auto">
+                        <div>
+                            <p class="font-bold text-sm">Mike R.</p>
+                            <p class="text-gray-400 text-xs">Chandler, AZ</p>
+                        </div>
+                        <span class="outcome-pill">Perfect flooring</span>
+                    </div>
+                </div>
+                <div class="testimonial-card card">
+                    <span class="eyebrow-dark text-xs mb-4 inline-block">Bathroom remodel stress</span>
+                    <blockquote class="text-gray-700 text-lg italic leading-relaxed mb-5">"The countertop installation exceeded our expectations. Beautiful work and great attention to detail. Worth every penny."</blockquote>
+                    <div class="flex items-center justify-between mt-auto">
+                        <div>
+                            <p class="font-bold text-sm">Jennifer L.</p>
+                            <p class="text-gray-400 text-xs">Phoenix, AZ</p>
+                        </div>
+                        <span class="outcome-pill">Dream bathroom</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section section-padding" style="background-color: var(--dark-bg);">
+        <div class="container-base">
+            <div class="text-center mb-16">
+                <span class="eyebrow">How It Works</span>
+                <h2 class="heading-lg text-white mt-4 mb-6">Simple process, exceptional results</h2>
+            </div>
+            <div class="how-it-works-container">
+                <div class="connecting-line"></div>
+                <div class="steps-grid">
+                    <div class="step-card card-glass">
+                        <div class="step-number">01</div>
+                        <h3 class="heading-md text-white mb-3">Free Consultation</h3>
+                        <p class="text-white/55 text-sm leading-relaxed">We visit your site, assess the project, and provide a detailed quote with no obligation.</p>
+                    </div>
+                    <div class="step-card card-glass">
+                        <div class="step-number">02</div>
+                        <h3 class="heading-md text-white mb-3">Professional Installation</h3>
+                        <p class="text-white/55 text-sm leading-relaxed">Our expert team handles the installation with precision, using quality materials and techniques.</p>
+                    </div>
+                    <div class="step-card card-glass">
+                        <div class="step-number">03</div>
+                        <h3 class="heading-md text-white mb-3">Final Inspection</h3>
+                        <p class="text-white/55 text-sm leading-relaxed">We ensure everything meets our high standards and your complete satisfaction before we leave.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats-section section-padding bg-white">
+        <div class="container-base">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
+                <div class="stat-item">
+                    <div class="accent-line"></div>
+                    <p class="heading-lg" style="color: var(--primary);">500+</p>
+                    <p class="text-gray-500 text-sm">Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <div class="accent-line"></div>
+                    <p class="heading-lg" style="color: var(--primary);">4.9★</p>
+                    <p class="text-gray-500 text-sm">Average Rating</p>
+                </div>
+                <div class="stat-item">
+                    <div class="accent-line"></div>
+                    <p class="heading-lg" style="color: var(--primary);">100%</p>
+                    <p class="text-gray-500 text-sm">Satisfaction Rate</p>
+                </div>
+                <div class="stat-item">
+                    <div class="accent-line"></div>
+                    <p class="heading-lg" style="color: var(--primary);">15</p>
+                    <p class="text-gray-500 text-sm">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section section-padding">
+        <div class="container-base">
+            <div class="text-center mb-16">
+                <span class="eyebrow-dark">Why We're Different</span>
+                <h2 class="heading-lg mt-4 mb-6">Compare installation options</h2>
+            </div>
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="col">DIY / Friends</div>
+                    <div class="col">Other Contractors</div>
+                    <div class="col featured">Andrews Installation <span class="badge">Best Choice</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="col">❌</div>
+                    <div class="col">❌</div>
+                    <div class="col featured">✅ Free consultation</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="col">❌</div>
+                    <div class="col">Sometimes</div>
+                    <div class="col featured">✅ Professional tools & techniques</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="col">Varies</div>
+                    <div class="col">Inconsistent</div>
+                    <div class="col featured">✅ Consistent quality</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="col">❌</div>
+                    <div class="col">Rarely</div>
+                    <div class="col featured">✅ Warranty & guarantee</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="col">❌</div>
+                    <div class="col">❌</div>
+                    <div class="col featured">✅ Licensed & insured</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pull Quote -->
+    <section class="pull-quote-section section-padding" style="background-color: var(--dark-bg);">
+        <div class="container-base">
+            <blockquote class="pull-quote">
+                "Finally found installers who care about getting it right the first time. Our home looks professional and we couldn't be happier."
+            </blockquote>
+            <cite class="pull-cite">- David K., Scottsdale Homeowner</cite>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding bg-white">
+        <div class="container-base">
+            <div class="grid lg:grid-cols-5 gap-16 items-start">
+                <div class="lg:col-span-2">
+                    <span class="eyebrow-dark">FAQ</span>
+                    <h2 class="heading-lg mt-4 mb-4">Everything you need to know</h2>
+                    <p class="text-gray-500 mb-8">Get answers to common questions about our installation services.</p>
+                    <a href="#lead-form" class="btn-primary inline-flex px-7 py-3.5">Get Free Estimate <span class="arrow">→</span></a>
+                </div>
+                <div class="lg:col-span-3">
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <button class="faq-question">How long does installation take?</button>
+                            <div class="faq-answer">Timeline varies by project, but most installations are completed in 1-3 days. We'll provide a specific schedule during your free consultation.</div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Do you provide warranties?</button>
+                            <div class="faq-answer">Yes, all our work comes with a comprehensive warranty. We're committed to your satisfaction and will fix any issues that arise from our workmanship.</div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">What areas do you serve?</button>
+                            <div class="faq-answer">We primarily serve the Tempe, Chandler, and Phoenix areas in Arizona. Contact us to confirm service availability for your location.</div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Do you work with my materials?</button>
+                            <div class="faq-answer">Absolutely! We can work with materials you provide or source them for you. We'll ensure everything is handled with care and installed properly.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TLDR Section -->
+    <section class="tldr-section section-padding" style="background-color: var(--dark-bg);">
+        <div class="container-base">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="heading-lg text-white mb-6">Ready to get professional installation done right?</h2>
+                    <p class="text-white/70 text-lg leading-relaxed">Get your free, no-obligation estimate today. We'll assess your project and provide a detailed plan with transparent pricing.</p>
+                </div>
+                <div>
+                    <ul class="tldr-list">
+                        <li>✅ Free consultation and detailed quote</li>
+                        <li>✅ Professional installation with quality materials</li>
+                        <li>✅ Licensed, insured, and experienced team</li>
+                        <li>✅ Satisfaction guarantee and warranty</li>
+                        <li>✅ Efficient timeline with minimal disruption</li>
+                        <li>✅ Cleanup and final inspection included</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Section -->
+    <section id="lead-form" class="lead-form-section section-padding">
+        <div class="container-base">
+            <div class="max-w-2xl mx-auto">
+                <div class="card p-10">
+                    <div class="text-center mb-8">
+                        <span class="eyebrow-dark">Get Started Today</span>
+                        <h2 class="heading-lg mt-4 mb-4">Request Your Free Estimate</h2>
+                        <p class="text-gray-600">Fill out the form below and we'll get back to you within 24 hours with a detailed quote.</p>
+                    </div>
+                    <form id="main-form" class="flex flex-col gap-5" novalidate>
+                        <div class="grid md:grid-cols-2 gap-5">
+                            <input type="text" name="name" placeholder="Your name *" class="form-input" required>
+                            <input type="email" name="email" placeholder="Email address *" class="form-input" required>
+                        </div>
+                        <input type="tel" name="phone" placeholder="Phone number *" class="form-input" required>
+                        <select name="service" class="form-input">
+                            <option value="">Select service needed *</option>
+                            <option value="flooring">Flooring Installation</option>
+                            <option value="cabinets">Cabinet Installation</option>
+                            <option value="countertops">Countertop Installation</option>
+                            <option value="tile">Tile Installation</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <textarea name="message" placeholder="Project details (optional)" class="form-input" rows="4"></textarea>
+                        <button type="submit" class="btn-primary w-full py-4 mt-2">Get Free Estimate</button>
+                        <p class="text-gray-400 text-xs text-center">Free · No obligation · Response within 24 hours</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-section">
+        <div class="container-base">
+            <div class="final-cta-content">
+                <div class="final-cta-text">
+                    <h2 class="final-cta-title">Ready to Transform Your Space?</h2>
+                    <p class="final-cta-subtitle">Don't settle for less. Get professional installation that lasts.</p>
+                    <div class="final-cta-features">
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Free detailed estimate</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Licensed & insured professionals</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Satisfaction guaranteed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="final-cta-actions">
+                    <a href="tel:(480) 555-1234" class="final-cta-phone">
+                        <span class="phone-icon">📞</span>
+                        <div class="phone-content">
+                            <div class="phone-number">(480) 555-1234</div>
+                            <div class="phone-label">Call for instant quote</div>
+                        </div>
+                    </a>
+                    <a href="#lead-form" class="final-cta-estimate">
+                        <span class="estimate-text">Get Free Estimate</span>
+                        <span class="estimate-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer class="minimal-footer">
+        <div class="container-base">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <a href="#" class="logo">
+                        <div class="logo-icon">AIG</div>
+                        <div class="logo-text">
+                            <div class="logo-main">Andrews</div>
+                            <div class="logo-tag">Installation Group</div>
+                        </div>
+                    </a>
+                    <p class="text-white/70 text-sm">Professional installation services in the Tempe area. Licensed, insured, and committed to quality.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Contact Us</h3>
+                    <p class="text-white/70 text-sm mb-2">📞 (480) 555-1234</p>
+                    <p class="text-white/70 text-sm mb-2">✉️ info@andrewsinstall.com</p>
+                    <p class="text-white/70 text-sm">📍 2090 E University Dr #107, Tempe, AZ 85288</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Services</h3>
+                    <ul class="text-white/70 text-sm space-y-1">
+                        <li>Flooring Installation</li>
+                        <li>Cabinet Installation</li>
+                        <li>Countertop Installation</li>
+                        <li>Tile & Stone Work</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-8 pt-8 text-center">
+                <p class="text-white/50 text-xs">© 2024 Andrews Installation Group. All rights reserved. | Licensed & Insured</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bar -->
+    <div class="mobile-sticky-bar md:hidden">
+        <div class="sticky-bar-content">
+            <a href="tel:+15551234567" class="sticky-call-btn">
+                <span class="call-icon">📞</span>
+                <span class="call-text">Call Now</span>
+            </a>
+            <a href="#lead-form" class="sticky-estimate-btn">
+                <span class="estimate-text">Free Estimate</span>
+                <span class="estimate-arrow">→</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Exit Intent Popup -->
+    <div id="exit-intent-popup" class="exit-intent-popup">
+        <div class="exit-popup-overlay"></div>
+        <div class="exit-popup-content">
+            <div class="exit-popup-header">
+                <div class="exit-popup-icon">⏰</div>
+                <h3 class="exit-popup-title">Wait! Don't Leave Yet</h3>
+                <p class="exit-popup-subtitle">Get your FREE installation estimate before you go</p>
+            </div>
+            <div class="exit-popup-body">
+                <div class="exit-popup-benefits">
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        <span>Free consultation</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        <span>No obligation quote</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        <span>Response within 24 hours</span>
+                    </div>
+                </div>
+                <form id="exit-popup-form" class="exit-popup-form" novalidate>
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Your name" class="exit-input" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Email address" class="exit-input" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" name="phone" placeholder="Phone number" class="exit-input">
+                    </div>
+                    <button type="submit" class="exit-submit-btn">
+                        <span class="btn-text">Get My Free Estimate</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
+                <div class="exit-popup-footer">
+                    <p class="exit-popup-guarantee">🔒 Your information is secure and will never be shared</p>
+                </div>
+            </div>
+            <button class="exit-popup-close" onclick="closeExitIntentPopup()">×</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
